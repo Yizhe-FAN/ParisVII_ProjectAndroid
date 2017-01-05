@@ -1,2 +1,0 @@
-# ParisVII_ProjectAndroid
-FlashCard
