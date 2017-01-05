@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">FlashCard</string>
+    <string name="play">Play</string>
+    <string name="begin">Begin</string>
+    <string name="manager">Manager</string>
+    <string name="settings">Settings</string>
+    <string name="other">Other</string>
+    <string name="fragment_play">Choose One Game to Begin !</string>
+    <string name="suivant">next</string>
+    <string name="precedent">previous</string>
+    <string name="timeLeft">TimeLeft:</string>
+    <string name="playGame">Play Game</string>
+
+    <string name="cardManager">Cards</string>
+    <string name="http">AddHTTP:</string>
+
+    <string name="levelbouton">OK</string>
+    <string name="confirm">confirm</string>
+    <string name="textAnswer">Answer:  </string>
+    <string name="question">Question:</string>
+    <string name="anwserHin">Entrez votre réponse</string>
+    <string name="nocard">There is no Card matched in This Game!</string>
+
+    <string name="facile">Easy</string>
+    <string name="difficile">Difficult</string>
+    <string name="trivial">Trivial</string>
+
+    <string name="boxmax">Card Max Times : </string>
+    <string name="boxfacile">Box Easy : </string>
+    <string name="boxdiffcile">Box Difficult : </string>
+    <string name="times">Time Left : </string>
+    <string name="backgroudmusic">BGM : </string>
+    <string name="choisirbgm">Choose BGM : </string>
+    <string name="mp3button">Click to Listen </string>
+
+    <string-array name="dropListDownLoad">
+        <item>DownLoad Games</item>
+        <item>Anais</item>
+        <item>vocabulaire_fr</item>
+        <item>Internet Game</item>
+    </string-array>
+
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="magiciendecode">Xiang LI</string>
+    <string name="magiciendecodeid">21512427</string>
+    <string name="yizhe">Yizhe FAN</string>
+    <string name="yizheid">21502157</string>
+</resources>

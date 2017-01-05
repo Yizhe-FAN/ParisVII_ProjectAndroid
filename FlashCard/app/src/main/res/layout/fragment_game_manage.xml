@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android_projet.yizhe_xiang.flashcard.manage.GameManageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create New Game"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp"
+            android:textStyle="italic|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radioManual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Manual  " />
+
+                <RadioButton
+                    android:id="@+id/radioInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DownLoad" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/nameManual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Type a game name" />
+
+                <Spinner
+                    android:id="@+id/nameInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/dropListDownLoad" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bCreateGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/create_game_selector"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Game Manager"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+
+        <Spinner
+            android:id="@+id/chooseGame"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bDeleteGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/delete_game_selector" />
+
+            <Button
+                android:id="@+id/bDeleteFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zip_selector" />
+
+            <Button
+                android:id="@+id/bCardManage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cards_manager_selector" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+</ScrollView>

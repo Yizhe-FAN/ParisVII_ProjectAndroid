@@ -1,0 +1,263 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android_projet.yizhe_xiang.flashcard.setting.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_cards" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/boxmax"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:id="@+id/boxmax"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/boxmax" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_easy"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boxfacile"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:id="@+id/boxfacile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/boxfacile" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_difficult"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boxdiffcile"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:id="@+id/boxdifficile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/boxdifficile" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_timeleft" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timeLeft"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+
+            <Spinner
+                android:id="@+id/tileleftspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/timeleft" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_timer"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Reminder:"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/reminder"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_music" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/backgroudmusic"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <Switch
+                android:layout_gravity="center"
+                android:id="@+id/switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="ON"
+                android:textOff="OFF"/>
+
+            <!--Button
+                android:id="@+id/musicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/on" />
+
+            <Button
+                android:id="@+id/musicoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/off" /-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_song" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choisirbgm"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:id="@+id/bgmlist"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/bgmlist" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+</ScrollView>

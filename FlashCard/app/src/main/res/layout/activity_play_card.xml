@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android_projet.yizhe_xiang.flashcard.play.PlayCardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarplay"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorMyBlue"
+        app:popupTheme="@style/MyMenuTheme"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_back"/>
+
+    <FrameLayout
+        android:id="@+id/playcard_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/precedent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="preCard"
+            android:text="@string/precedent"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/arrows_button_selector"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/suivant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:onClick="nextCard"
+            android:text="@string/suivant"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/arrows_button_selector"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

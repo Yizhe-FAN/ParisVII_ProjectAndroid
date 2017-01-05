@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.android_projet.yizhe_xiang.flashcard.manage.AddOneCardFragment">
+
+    <EditText
+        android:id="@+id/etQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please type your new question"
+        android:textColor="@color/colorMyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please type the answer"
+        android:textColor="@color/colorMyBlue"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/addEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/facile" />
+
+        <RadioButton
+            android:id="@+id/addDifficult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/difficile" />
+
+        <RadioButton
+            android:id="@+id/addTrivial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/trivial" />
+
+        <RadioButton
+            android:id="@+id/addNormal"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bCreateCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create" />
+
+</LinearLayout>
