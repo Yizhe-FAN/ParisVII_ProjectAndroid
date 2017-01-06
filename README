@@ -1,0 +1,18 @@
+# ParisVII_ProjectAndroid
+FlashCard
+
+==========================================
+Projet de Android 
+  by FAN YiZhe (#21502157)
+  && LI Xiang (#21512427)
+==========================================
+This is a card game to help us to study the knowledge of some subject. like foreign language or geography.
+
+Fonctions:
+Be able to download the game in the internet and install.
+Be able to create a game , delete a game , add new card, modify card, delete card.
+Be able to listen background music. (3 different music to choose)
+Be able to remind us a game we have not played for a long time.
+Be able to do some settings.
+Be able to count down the time left when we are answering the question.
+Be able to give a tag to each card to classic their level of difficulty.
